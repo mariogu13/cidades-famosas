@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+body {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: "Lobster", sans-serif;
+    color: rgb(50, 84, 238);
+    font-size: 50px;
+}
+
+.filtros {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.filtro {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(36, 63, 182);
+    color: white;
+    border-radius: 5px;
+}
+
+.filtro:hover{
+    background-color: rgb(72, 102, 231);
+}
+
+.filtro.desativado {
+    background-color: #aaa;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.filtro.desativado:hover{
+    background-color: #d4d2d2;
+}
+
+li {
+    font-size: 30px;
+    font-family: "Crimson Text", serif;
+    margin-bottom: 7%;
+}
+
+::-webkit-scrollbar {
+    background-color: rgb(27, 27, 27);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgb(50, 84, 238);
+}
+
+img {
+    height: 750px;
+    width: 97%;
+    margin-top: 1%;
+}
