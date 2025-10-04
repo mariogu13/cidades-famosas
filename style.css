@@ -1,10 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root{
+    --cor-fundo: #f2fcff;
+    --cor-titulo: #4e6ad3;
+    --cor-texto: #242323;
+    --cor-botao: #4e6ad3;
+    --cor-botao-hover: #90b3ff;
+}
+
+.dark-mode{
+    --cor-fundo: #121212;
+    --cor-titulo: #8697d6;
+    --cor-texto: #e1e1e1;
+    --cor-botao: #8697d6;
+    --cor-botao-hover: #9fb3ff;
+}
 
 body {
-    background-color: rgb(27, 27, 27);
-    color: white;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.dark-mode-button {
+    display: flex;
+    justify-content: right;
+}
+
+#dark-mode-toggle {
+    border: none;
+    cursor: pointer;
+    background-color: var(--cor-botao);
+    color: white;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#dark-mode-toggle:hover {
+    background-color: var(--cor-botao-hover);
+    transform: scale(1.1);
 }
 
 .titulo {
@@ -14,8 +57,8 @@ body {
 }
 
 h1 {
-    font-family: "Lobster", sans-serif;
-    color: rgb(50, 84, 238);
+    font-family: "Montserrat", sans-serif;
+    color: var(--cor-titulo);
     font-size: 50px;
 }
 
@@ -30,13 +73,13 @@ h1 {
     margin: 5px;
     border: none;
     cursor: pointer;
-    background-color: rgb(36, 63, 182);
+    background-color: var(--cor-botao);
     color: white;
     border-radius: 5px;
 }
 
 .filtro:hover{
-    background-color: rgb(72, 102, 231);
+    background-color: var(--cor-botao-hover);
 }
 
 .filtro.desativado {
@@ -46,25 +89,25 @@ h1 {
 }
 
 .filtro.desativado:hover{
-    background-color: #d4d2d2;
+    background-color: #838383;
 }
 
 li {
     font-size: 30px;
-    font-family: "Crimson Text", serif;
+    font-family: "Roboto", sans-serif;
     margin-bottom: 7%;
 }
 
 ::-webkit-scrollbar {
-    background-color: rgb(27, 27, 27);
+    background-color: var(--cor-fundo);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: white;
+    background-color: var(--cor-botao);
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background-color: rgb(50, 84, 238);
+    background-color: var(--cor-botao-hover);
 }
 
 img {
